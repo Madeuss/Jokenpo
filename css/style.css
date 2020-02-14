@@ -112,19 +112,19 @@ ul li a{
 #restart:hover{
     border: none;
     font-size: 27px;
+    cursor: pointer;
 
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 #restart-text:hover{
-    cursor: default;
+    cursor: pointer;
 }
 footer{
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: auto;
+    position: relative;
+    height: 50px;
     background-color: #262626;
     color: rgb(230, 199, 245);
     text-align: center;
