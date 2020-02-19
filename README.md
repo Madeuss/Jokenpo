@@ -1,6 +1,6 @@
 # Jokenpo
   
-**# Projeto Jogo Pedra, Papel e Tesoura
+# Projeto Jogo Pedra, Papel e Tesoura
 
 Projeto de um game de pedra, papel e tesoura utilizando HTML, CSS e JAVASCRIPT
 
