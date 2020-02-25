@@ -16,6 +16,7 @@ Dinâmica das funcionalidades em JavaScript
 **Configuração do Projeto:**
 
 ```
-Importe todos os arquivos e execute o index.html no seu navegador.
+Importe todos os arquivos
+Execute o 'index.html' no seu navegador.
 
 ```
