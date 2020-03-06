@@ -1,44 +1,44 @@
-var playerChoise = 0;
+var playerchoice = 0;
 var playerScore = 0;
-var pcChoise = 0;
+var pcchoice = 0;
 var pcScore = 0;
 var winner = 0;
 
 document.getElementById("message").innerHTML = ""
 
-function play(choise){
-    playerChoise = choise;
+function play(choice){
+    playerchoice = choice;
 
-    pcChoise = Math.floor((Math.random() * (3 - 1 + 1))) + 1;
+    pcchoice = Math.floor((Math.random() * (3 - 1 + 1))) + 1;
 
     //1-Pedra
     //2-Papel
     //3-Tesoura
-    if((playerChoise == 1) && (pcChoise == 1)){
+    if((playerchoice == 1) && (pcchoice == 1)){
         winner = 0;
     }
-    else if((playerChoise == 1) && (pcChoise == 2)){
+    else if((playerchoice == 1) && (pcchoice == 2)){
         winner = 2;
     }
-    else if((playerChoise == 1) && (pcChoise == 3)){
+    else if((playerchoice == 1) && (pcchoice == 3)){
         winner = 1;
     }
-    else if((playerChoise == 2) && (pcChoise == 1)){
+    else if((playerchoice == 2) && (pcchoice == 1)){
         winner = 1;
     }
-    else if((playerChoise == 2) && (pcChoise == 2)){
+    else if((playerchoice == 2) && (pcchoice == 2)){
         winner = 0;
     }
-    else if((playerChoise == 2) && (pcChoise == 3)){
+    else if((playerchoice == 2) && (pcchoice == 3)){
         winner = 2;
     }
-    else if((playerChoise == 3) && (pcChoise == 1)){
+    else if((playerchoice == 3) && (pcchoice == 1)){
         winner = 2;
     }
-    else if((playerChoise == 3) && (pcChoise == 2)){
+    else if((playerchoice == 3) && (pcchoice == 2)){
         winner = 1;
     }
-    else if((playerChoise == 3) && (pcChoise == 3)){
+    else if((playerchoice == 3) && (pcchoice == 3)){
         winner = 0;
     }
 
@@ -57,9 +57,9 @@ function play(choise){
     .remove('picked');
 
     //aplica a classe .picked que retorna a opacidade da img
-    document.getElementById("player-choice-" + playerChoise).classList
+    document.getElementById("player-choice-" + playerchoice).classList
     .add('picked');
-    document.getElementById("computer-choice-" + pcChoise).classList
+    document.getElementById("computer-choice-" + pcchoice).classList
     .add('picked');
 
     if(winner == 0){
